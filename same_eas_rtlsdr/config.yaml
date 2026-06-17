@@ -2,6 +2,12 @@ name: SAME EAS RTL-SDR
 version: "0.1.0"
 slug: same_eas_rtlsdr
 description: Decode NOAA SAME/EAS alerts from RTL-SDR and fire Home Assistant events
+arch:
+  - aarch64
+  - amd64
+  - armv7
+  - armhf
+  - i386
 startup: services
 boot: auto
 init: false
