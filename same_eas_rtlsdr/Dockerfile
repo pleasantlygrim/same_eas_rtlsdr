@@ -27,6 +27,7 @@ RUN git clone https://github.com/EliasOenal/multimon-ng.git /tmp/multimon-ng && 
 
 COPY run.sh /run.sh
 COPY same_eas.py /same_eas.py
+COPY web.py /web.py
 
 RUN chmod +x /run.sh
 
