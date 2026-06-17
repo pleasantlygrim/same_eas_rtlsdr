@@ -1,0 +1,24 @@
+name: SAME EAS RTL-SDR
+version: "0.1.0"
+slug: same_eas_rtlsdr
+description: Decode NOAA SAME/EAS alerts from RTL-SDR and fire Home Assistant events
+startup: services
+boot: auto
+init: false
+
+usb: true
+privileged:
+  - SYS_RAWIO
+devices:
+  - /dev/bus/usb
+
+hassio_api: true
+homeassistant_api: true
+
+options:
+  frequency: "162.550M"
+  event_type: "same_eas_alert"
+
+schema:
+  frequency: str
+  event_type: str
