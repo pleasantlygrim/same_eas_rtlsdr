@@ -11,7 +11,10 @@ RUN apk add --no-cache \
     make \
     gcc \
     g++ \
-    musl-dev
+    musl-dev \
+    sox \
+    lame \
+    busybox-extras
 
 RUN git clone https://github.com/EliasOenal/multimon-ng.git /tmp/multimon-ng && \
     cd /tmp/multimon-ng && \
